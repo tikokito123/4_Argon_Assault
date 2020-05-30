@@ -6,15 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
-    [SerializeField] float LevelLoadDelay = 1f;
+    [SerializeField] float levelLoadDelay = 1f;
+    [SerializeField] GameObject deathFX;
     private void OnTriggerEnter(Collider other)
     {
         StartDeath();
+        Invoke("RestartScene", levelLoadDelay);
     }
 
     void StartDeath()
     {
-        print("controll frozen!");
+        deathFX.SetActive(true);
         SendMessage("OnPlayerDeath");
+    }
+    void RestartScene()
+    {
+        SceneManager.LoadScene(1);
     }
 }
