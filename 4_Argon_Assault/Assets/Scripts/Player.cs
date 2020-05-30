@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
         ProccesTranslation();
         ProccesRotation();
     }
-
+    
     private void ProccesRotation()
     {
         float pitch = transform.localPosition.y * positionPitchFactor + yThrow * controlPitchFactor;
