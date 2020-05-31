@@ -213,6 +213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4053631435155484341, guid: d5b01ea3004523a489f8e771f111c2e8, type: 3}
   parent: {fileID: 702685502}
+  scoreForHit: 7
 --- !u!1 &182805989 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1754910023302818, guid: 60f26d6465b822444ab5dadf5986bb35,
@@ -233,6 +234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4053631435155484341, guid: d5b01ea3004523a489f8e771f111c2e8, type: 3}
   parent: {fileID: 702685502}
+  scoreForHit: 7
 --- !u!1 &292825740
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,6 +360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4053631435155484341, guid: d5b01ea3004523a489f8e771f111c2e8, type: 3}
   parent: {fileID: 702685502}
+  scoreForHit: 12
 --- !u!1001 &335825027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -525,6 +528,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053631435155484338, guid: d5b01ea3004523a489f8e771f111c2e8,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053631435155484338, guid: d5b01ea3004523a489f8e771f111c2e8,
+        type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4053631435155484338, guid: d5b01ea3004523a489f8e771f111c2e8,
+        type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4053631435155484341, guid: d5b01ea3004523a489f8e771f111c2e8,
         type: 3}
@@ -999,7 +1017,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -624, y: 455}
+  m_AnchoredPosition: {x: -624, y: -430}
   m_SizeDelta: {x: -1289.1794, y: -960.69794}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211472404
@@ -1209,6 +1227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4053631435155484341, guid: d5b01ea3004523a489f8e771f111c2e8, type: 3}
   parent: {fileID: 702685502}
+  scoreForHit: 7
 --- !u!4 &1609077291 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4655758116509614, guid: 60f26d6465b822444ab5dadf5986bb35,
@@ -1409,6 +1428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 4053631435155484341, guid: d5b01ea3004523a489f8e771f111c2e8, type: 3}
   parent: {fileID: 702685502}
+  scoreForHit: 12
 --- !u!1 &1922081708
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,6 +1703,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 963194228}
     m_Modifications:
+    - target: {fileID: 4746855920303657168, guid: 596385bb265b0d34c8c46bd7210531c6,
+        type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: 4746855920942273083, guid: 596385bb265b0d34c8c46bd7210531c6,
         type: 3}
       propertyPath: m_Name
@@ -1822,6 +1847,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492270463284192891, guid: 596385bb265b0d34c8c46bd7210531c6,
+        type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 596385bb265b0d34c8c46bd7210531c6, type: 3}

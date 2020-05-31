@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class ScoreBoard : MonoBehaviour
 {
-    [SerializeField] int scoreForHit = 5;
+    
     int score;
     Text scoreTest;
     // Start is called before the first frame update
@@ -16,9 +16,9 @@ public class ScoreBoard : MonoBehaviour
         scoreTest = GetComponent<Text>();
         scoreTest.text = score.ToString();
     }
-    public void scoreHit()
+    public void scoreHit(int addScore)
     {
-        score = score + scoreForHit;
+        score = score + addScore;
         scoreTest.text = score.ToString();
     }
     void Update()
