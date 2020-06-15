@@ -10259,6 +10259,11 @@ PrefabInstance:
       propertyPath: CollisionModule.minKillSpeed
       value: 1500
       objectReference: {fileID: 0}
+    - target: {fileID: 4746855920303657168, guid: 596385bb265b0d34c8c46bd7210531c6,
+        type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4746855920303657183, guid: 596385bb265b0d34c8c46bd7210531c6,
         type: 3}
       propertyPath: m_Name
@@ -10418,6 +10423,11 @@ PrefabInstance:
         type: 3}
       propertyPath: CollisionModule.minKillSpeed
       value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492270463284192891, guid: 596385bb265b0d34c8c46bd7210531c6,
+        type: 3}
+      propertyPath: moveWithTransform
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 596385bb265b0d34c8c46bd7210531c6, type: 3}
